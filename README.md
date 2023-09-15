@@ -10,8 +10,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Agile  = 45 (10 Scrum, 10 Kanban)
       + Cloud  = 42 (22 Azure)
       + CI/CD  = 25
+      + IaC    = 20
   ------------------------------------------
-        Total:   155
+        Total:   175
   ```
 </details>
 
