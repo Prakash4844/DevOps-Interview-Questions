@@ -2,16 +2,15 @@
 
 Welcome to the DevOps Interview Questions Repository! Whether you're preparing for a DevOps job interview or looking to assess your knowledge in the field, you've come to the right place. This repository is a collection of frequently asked interview questions and answers related to DevOps practices, tools, and concepts.
 
-<deatils>
-    <summary>Total Question Count</summary>
+<details>
+  <summary>Total Question Count</summary>
 
-```
-    + DevOps = 42
-    + Agile  = 45 (10 Scrum, 10 Kanban)
-    ------------------------------------
-    Total:     87
-```
-
+  ```js
+      + DevOps = 42
+      + Agile  = 45 (10 Scrum, 10 Kanban)
+  ------------------------------------------
+        Total:   87
+  ```
 </details>
 
 ## DevOps Roadmaps
