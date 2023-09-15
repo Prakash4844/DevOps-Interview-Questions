@@ -6,10 +6,11 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   <summary>Total Question Count</summary>
 
   ```js
-      + DevOps = 42
+      + DevOps = 43
       + Agile  = 45 (10 Scrum, 10 Kanban)
+      + Cloud  = 42 (22 Azure)
   ------------------------------------------
-        Total:   87
+        Total:   130
   ```
 </details>
 

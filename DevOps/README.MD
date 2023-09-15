@@ -21,13 +21,13 @@
 
 ## Essentials
 
-**0.What is DevOps Engineer?**
+**0. What is DevOps Engineer?**
 
 - While DevOps is a mindset and set of practices, organizations need people to implement and manage the tools and technologies that enable DevOps practices. This is where the role of DevOps Engineer comes in. A DevOps Engineer is responsible for developing, deploying, and maintaining the infrastructure and software systems that support the DevOps culture and practices within an organization. This includes tasks such as designing and building automation frameworks, implementing Continuous Integration/Continuous Delivery (CI/CD) pipelines, managing infrastructure as code, and monitoring and logging systems.
 
 - Although DevOps is a culture and mindset, having a dedicated role like a DevOps Engineer can help to ensure that the necessary technical aspects of DevOps are being properly addressed within an organization. The role of a DevOps Engineer can be filled by individuals with various backgrounds, such as software developers, system administrators, network engineers, or others, who have the necessary skills and experience to work with the relevant tools and technologies.
 
-**0.5.How do Agile and DevOps interrelate?**
+**0.5. How do Agile and DevOps interrelate?**
 
 - Agile and DevOps both prioritize collaboration, continuous improvement, and delivering working software. They can be used together to create a more efficient software development process. Agile emphasizes iterative development and customer satisfaction, while DevOps emphasizes automating processes and integrating development and operations teams. When used together, Agile and DevOps can improve software development and delivery by streamlining processes and enhancing collaboration.
 
@@ -204,6 +204,33 @@
     - Security Scanning: Scan IaC scripts for security vulnerabilities using tools like TerraScan or Checkov.
     - Compliance Testing: Ensure that IaC scripts comply with organizational policies and standards.
     - Continuous Integration: Integrate IaC testing into the CI/CD pipeline to automate testing on every code change.
+
+**34. What is the difference B/W Continuous Delivery vs Continuous Deployment?**
+
+Continuous Delivery (CD) and Continuous Deployment (CD) are both practices in the realm of DevOps and software development, but they serve different purposes and have distinct characteristics:
+
+1. Continuous Delivery (CD):
+
+   - Continuous Delivery is a software development practice that focuses on automating and streamlining the process of delivering software from development to production.
+   
+   - In Continuous Delivery, code changes are automatically built, tested, and packaged in a way that they are always in a deployable state. However, the decision to actually deploy these changes to the production environment is made manually.
+
+   - The goal of Continuous Delivery is to ensure that software is always in a production-ready state and can be deployed to production at any time with minimal manual intervention.
+
+   - CD helps reduce the risk associated with deployments by catching issues early in the development process and ensuring that code is thoroughly tested and validated before it reaches the production environment.
+
+2. Continuous Deployment (CD):
+
+   - Continuous Deployment is an extension of Continuous Delivery. In Continuous Deployment, every code change that passes automated tests and quality checks is automatically deployed to the production environment without manual intervention.
+
+   - The key difference between Continuous Delivery and Continuous Deployment is the automatic deployment aspect. In Continuous Deployment, there is no human gatekeeper or manual approval step for deploying changes to production.
+
+   - Continuous Deployment is typically used in organizations that require rapid and frequent releases. It allows for quicker delivery of new features and bug fixes to end-users.
+
+   - While Continuous Deployment can increase development speed and agility, it also requires robust automated testing and monitoring to ensure that any issues that may arise in production are quickly detected and addressed.
+
+In summary, Continuous Delivery ensures that code changes are always in a deployable state but requires manual approval for deployment to production, while Continuous Deployment takes the automation a step further by automatically deploying code changes to production as soon as they pass automated tests and checks. The choice between the two approaches depends on the organization's risk tolerance, release frequency goals, and the level of automation and testing maturity in place.
+
 ---
 ---
 
