@@ -40,7 +40,7 @@ DevOps is a rapidly evolving field that bridges the gap between software develop
 
 1. **Browse the Questions:** Explore the repository to find questions related to the DevOps topics you want to study.
 
-2. **Read the Answers:** Each question is accompanied by a detailed answer or explanation to help you understand the concept thoroughly.
+2. **Read the Answers:** Each question is accompanied by an answer or explanation to help you understand the concept.
 
 3. **Contribute:** If you have additional questions or want to improve existing answers, please consider contributing to this repository. We welcome your insights and contributions!
 
