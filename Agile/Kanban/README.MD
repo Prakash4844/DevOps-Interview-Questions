@@ -41,7 +41,7 @@
 
 ## Scenario-based DevOps question.
 
-10. **Have you used any Kanban software or tools, and if so, which ones?**
+1. **Have you used any Kanban software or tools, and if so, which ones?**
 
     I can provide information on commonly used Kanban software and tools that professionals often use:
 

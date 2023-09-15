@@ -46,7 +46,7 @@
 
 ## Scenario-based DevOps question.
 
-10. **Have you been part of a Scrum team that used any specific Agile project management tools, and if so, which ones?**
+1. **Have you been part of a Scrum team that used any specific Agile project management tools, and if so, which ones?**
 
     I can provide information on common Agile project management tools that Scrum teams often use based on general knowledge.
 
