@@ -13,9 +13,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + IaC           = 20
       + Linux         = 42
       + Git           = 28
-      + GitHub        = 26
+      + GitHub        = 49 (23 GitHub Actions)
   ------------------------------------------------
-        Total:          271
+        Total:          294
   ```
 </details>
 
