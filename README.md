@@ -9,13 +9,13 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + DevOps        = 43
       + Agile         = 45 (10 Scrum, 10 Kanban)
       + Cloud         = 42 (22 Azure)
+      + Python        = 105
       + CICD          = 25
       + IaC           = 20
       + Linux         = 42
       + Git           = 28
       + GitHub        = 49 (23 GitHub Actions)
       + Docker        = 47 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
-      + Python        = 105
   ------------------------------------------------
         Total:          446
   ```
