@@ -74,9 +74,6 @@ Each of these deployment models has its advantages and use cases. The choice of 
 3.  **Software as a Service (SaaS):** SaaS delivers fully functional software applications over the internet. Users access these applications through a web browser, without worrying about hardware or software maintenance. Popular examples include Google Workspace and Salesforce.
 
 
-Certainly! Here are detailed answers to the general cloud computing interview questions:
-
-
 4. **Can you explain the essential characteristics of cloud computing?**
    - **On-demand Self-service**: Users can provision and manage resources as needed without requiring human intervention from the service provider.
 
