@@ -1,8 +1,8 @@
 
 ##### Here are Some Resources: 
 
-[Prepinsta - GitHub Interview Questions and Answers](https://prepinsta.com/interview-preparation/technical-interview-questions/github-interview-questions-and-answers/)<br>
-[MindMajix - GitHub Interview Questions](https://mindmajix.com/github-interview-questions)
+1. [Prepinsta - GitHub Interview Questions and Answers](https://prepinsta.com/interview-preparation/technical-interview-questions/github-interview-questions-and-answers/)
+2. [MindMajix - GitHub Interview Questions](https://mindmajix.com/github-interview-questions)
 
 **NOTE** - Above resources are not mine and belong to their owners, questions may overlap.
 
