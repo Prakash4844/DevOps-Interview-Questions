@@ -6,14 +6,16 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   <summary>Total Question Count</summary>
 
   ```js
-      + DevOps = 43
-      + Agile  = 45 (10 Scrum, 10 Kanban)
-      + Cloud  = 42 (22 Azure)
-      + CI/CD  = 25
-      + IaC    = 20
-      + Linux  = 42
-  ------------------------------------------
-        Total:   217
+      + DevOps        = 43
+      + Agile         = 45 (10 Scrum, 10 Kanban)
+      + Cloud         = 42 (22 Azure)
+      + CI/CD         = 25
+      + IaC           = 20
+      + Linux         = 42
+      + Git           = 28
+      + GitHub        = 26
+  ------------------------------------------------
+        Total:          271
   ```
 </details>
 
