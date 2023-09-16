@@ -15,9 +15,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Linux         = 42
       + Git           = 28
       + GitHub        = 49 (23 GitHub Actions)
-      + Docker        = 47 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
+      + Docker        = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
   ------------------------------------------------
-        Total:          446
+        Total:          451
   ```
 </details>
 
