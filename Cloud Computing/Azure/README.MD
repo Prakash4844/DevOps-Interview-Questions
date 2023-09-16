@@ -448,7 +448,7 @@ Here's what "NetworkWatchRG" represents:
 
 It's important to review the Azure Pricing page and the specific pricing details related to Azure Network Watcher to understand any potential charges based on your usage patterns and requirements. Additionally, consider using Azure Cost Management and Billing tools to monitor and manage your Azure service costs effectively.
 
-**20. What things should I one know about Azure VM?**
+**20. What things should one know about Azure VM?**
 
 When working with Azure Virtual Machines (VMs), there are several important aspects and considerations you should be aware of:
 
