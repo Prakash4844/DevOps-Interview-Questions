@@ -12,12 +12,12 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Python        = 105
       + CICD          = 25
       + IaC           = 20
-      + Linux         = 42
+      + Linux         = 45
       + Git           = 28
       + GitHub        = 49 (23 GitHub Actions)
       + Docker        = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
   ------------------------------------------------
-        Total:          451
+        Total:          454
   ```
 </details>
 
