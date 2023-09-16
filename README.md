@@ -11,8 +11,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Cloud  = 42 (22 Azure)
       + CI/CD  = 25
       + IaC    = 20
+      + Linux  = 42
   ------------------------------------------
-        Total:   175
+        Total:   217
   ```
 </details>
 
