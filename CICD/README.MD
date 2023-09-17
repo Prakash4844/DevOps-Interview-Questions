@@ -109,9 +109,7 @@
       - Allow easy rollback in case issues are discovered in the green environment.
       - Facilitate thorough testing of the new version in a production-like environment before exposing it to users.
 
-11. **What is the difference between a monolithic
-
- and microservices-based CI/CD pipeline?**
+11. **What is the difference between a monolithic and microservices-based CI/CD pipeline?**
 
     - **Monolithic CI/CD Pipeline**: In a monolithic pipeline, the entire application is built, tested, and deployed as a single unit. Changes to any part of the application trigger a complete pipeline run. It's simpler but may lead to longer build and deployment times.
     
