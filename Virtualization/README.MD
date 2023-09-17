@@ -1,7 +1,4 @@
 #### Here are Some Resources: 
----
-##### Resources
-[Let's Learn  Virtualization](https://letslearn Virtualization.tech)
 
 ---
 ##### Links to interview questions
