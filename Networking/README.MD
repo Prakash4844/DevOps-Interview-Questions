@@ -21,7 +21,6 @@
 ## Table of Contents
 
 1. [General Questions](#questions)
-2. [Scenario-based Questions] (#some-scenario-based-devops-question)
 
 ---
 
