@@ -21,7 +21,9 @@
 ## Table of Contents
 
 1. [General Questions](#questions)
-2. [Scenario-based Questions](#some-scenario-based-devops-question)
+2. [Scenario-based Questions] (#some-scenario-based-devops-question)
+
+---
 
 1. **What is a computer network, and why is it important?**
    
