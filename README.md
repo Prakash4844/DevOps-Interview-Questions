@@ -21,8 +21,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + CICD              = 25
       + IaC               = 20
       + K8s               = 63
+      + SRE               = 31
   ------------------------------------------------
-        Total:              590
+        Total:              621
   ```
 </details>
 
