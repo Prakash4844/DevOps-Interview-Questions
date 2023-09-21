@@ -198,9 +198,7 @@
 
     - **Control Congestion:** QoS mechanisms can help prevent network congestion by controlling the flow of traffic.
 
-    - **Improve User Experience:** QoS can lead to better user experiences for real-time applications, reducing latency and packet loss.
-
-    QoS can be implemented using various techniques, including:
+    - **Improve User Experience:** QoS can lead to better user experiences for real-time applications, reducing latency and packet loss. QoS can be implemented using various techniques, including:
 
     - **Traffic Classification:** Identifying and classifying different types of traffic, such as VoIP, video streaming, or data, based on packet headers or port numbers.
 
