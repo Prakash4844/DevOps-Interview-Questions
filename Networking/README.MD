@@ -97,9 +97,7 @@
 
    - **Stateful Inspection:** Modern firewalls use stateful inspection to keep track of the state of active connections. This allows them to make more informed decisions about whether to allow or deny traffic.
 
-   - **Proxying:** Some firewalls act as intermediaries for requests between internal and external systems. This can add an additional layer of security by
-
- hiding internal network details.
+   - **Proxying:** Some firewalls act as intermediaries for requests between internal and external systems. This can add an additional layer of security by hiding internal network details.
 
    - **Application Layer Filtering:** Advanced firewalls can inspect traffic at the application layer, identifying and blocking specific applications or services known to be insecure or unauthorized.
 
