@@ -22,8 +22,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + IaC               = 20
       + K8s               = 63
       + SRE               = 31
+      + Cutural-Fit       = 26
   ------------------------------------------------
-        Total:              628
+        Total:              654
   ```
 </details>
 
