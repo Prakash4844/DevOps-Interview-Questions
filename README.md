@@ -28,6 +28,27 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   ```
 </details>
 
+| TOPICS                                          | Question Count                                               |
+|-------------------------------------------------|--------------------------------------------------------------|
+| + [DevOps](./DevOps/README.MD)                  | = 43                                                         |
+| + [Agile](./Agile/README.MD)                    | = 45 (10 [Scrum](./Agile/Scrum/README.MD), 10 [kanban](./Agile/Kanban/README.MD))                                   |
+| + [Cloud](./Cloud%20Computing/README.MD)        | = 53 (22 [Azure](./Cloud%20Computing/Azure/README.MD))                                              |
+| + [Virtualization](./Virtualization/README.MD)  | = 20                                                         |
+| + [Networking](./Networking/README.MD)          | = 34                                                         |
+| + [Linux](./Linux/README.MD)                    | = 49                                                         |
+| + [Git](./Git/README.MD)                        | = 28                                                         |
+| + [GitHub](./GitHub/README.MD)                  | = 49 (23 [GitHub Actions](./GitHub/GitHub%20Actions/README.MD))                                     |
+| + [Python](./Python/README.MD)                  | = 105                                                        |
+| + [Docker](./Docker/README.MD)                  | = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) |
+| + [API](./API/README.MD)                        | = 11                                                         |
+| + [CICD](./CICD/README.MD)                      | = 25                                                         |
+| + [IaC](./IaC/README.MD)                        | = 20                                                         |
+| + [K8s](./K8s/README.MD)                        | = 63                                                         |
+| + [SRE](./SRE/README.MD)                        | = 31                                                         |
+| + [Cutural-Fit](./Cultural-Fit/README.MD)       | = 26                                                         |
+|                                                 |                                                              |
+|   Total                                         | = 654                                                        |
+
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)
 2. [Detailed](https://roadmap.sh/devops)
