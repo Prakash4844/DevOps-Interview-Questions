@@ -541,9 +541,7 @@
      - Ensure that the user has the necessary permissions to print (in CUPS and system settings).
      - Test the printer by sending a print job from the command line (`lp` command) or a graphical application.
      - Restart the CUPS service using `systemctl restart cups` (for systemd) or `service cups restart` (for SysV).
-    
-
- - Consider reconfiguring the printer in CUPS if needed.
+     - Consider reconfiguring the printer in CUPS if needed.
 
 10. **Scenario:** You suspect that a server is under a Distributed Denial of Service (DDoS) attack. What steps would you take to mitigate the attack and protect the server?
 
