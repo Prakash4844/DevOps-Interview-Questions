@@ -437,7 +437,71 @@
     10. **Use of VPN (Virtual Private Network)**:
           - If you have a VPN set up between your local and remote networks, you can access the remote machine as if it were on your local network.
 
-    When accessing a remote Linux machine, always consider security best practices. Ensure that your system is properly configured, use strong passwords or SSH keys, and limit access to only trusted users and networks.
+          - When accessing a remote Linux machine, always consider security best practices. Ensure that your system is properly configured, use strong passwords or SSH keys, and limit access to only trusted users and networks.
+
+32. **What architecture does Linux Support?**
+
+    Linux, as an open-source operating system, has supported various hardware architectures since its inception. Its architecture support is one of its key strengths, making it versatile and adaptable to a wide range of computing platforms. In 2001, Linux supported the most common architectures such as x86, which includes both 32-bit and 64-bit variants, making it suitable for desktop and server environments. Additionally, Linux was compatible with other architectures like ARM, MIPS, PowerPC, and SPARC, enabling its deployment in embedded systems, mobile devices, and specialized servers.
+
+    The Linux kernel's modular design and extensive developer community allowed for ongoing architecture support and adaptation. This flexibility enabled Linux to extend its reach into emerging technologies and niche markets, such as Internet of Things (IoT) devices, supercomputers, and gaming consoles.
+
+    Over the years, Linux has continued to expand its architecture support, ensuring its relevance in an ever-evolving computing landscape. Its ability to run on diverse hardware platforms remains a cornerstone of its success as a robust and adaptable open-source operating system.
+
+33. **How do you check memory usage in linux**
+
+    To check memory usage in Linux, you can use various commands and tools. Here's a brief overview of some commonly used methods:
+
+      1. **free**: The `free` command provides an overview of your system's memory usage, including total, used, and free memory, both for physical RAM and swap space.
+
+        ```bash
+        free -h
+        ```
+
+      2. **top**: The `top` command displays real-time system statistics, including memory usage, processes, and more. When running `top`, you can press "Shift+M" to sort processes by memory usage.
+
+        ```bash
+        top
+        ```
+
+      3. **htop**: Similar to `top`, `htop` provides a more interactive and user-friendly view of system resource usage. It also allows you to sort processes by various criteria, including memory usage.
+
+        ```bash
+        htop
+        ```
+
+      4. **vmstat**: The `vmstat` command provides detailed information about memory, including swap usage, page in/out rates, and more.
+
+        ```bash
+        vmstat
+        ```
+
+      5. **/proc/meminfo**: You can directly read the `/proc/meminfo` file to get detailed information about memory usage. It contains various metrics related to memory.
+
+        ```bash
+        cat /proc/meminfo
+        ```
+
+      6. **ps**: The `ps` command can be used to list running processes along with their memory usage. You can customize the output to show memory-related information.
+
+        ```bash
+        ps aux --sort -rss
+        ```
+
+      These commands and tools provide different levels of detail and interactivity for monitoring memory usage in Linux. Choose the one that best suits your needs based on your specific use case and preferences.
+
+34. **What is Swap in Linux**
+
+    In Linux, "swap" refers to a space on a storage device (usually a dedicated partition or a swap file) that is used as virtual memory. Swap space is a crucial component of the operating system's memory management system and serves several purposes:
+
+      1. **Supplementing Physical RAM**: When your computer's physical RAM (Random Access Memory) is fully utilized, the operating system can use swap space to temporarily store data that would normally be stored in RAM. This prevents running out of memory and allows the system to continue functioning, albeit at a reduced performance level.
+
+      2. **Page Out Inactive Data**: The Linux kernel uses swap space to "page out" less frequently used data from RAM to the swap area, freeing up physical RAM for more important tasks. This process is part of a strategy called "paging" or "swapping."
+
+      3. **Hibernation**: When a computer hibernates, the contents of RAM are saved to the swap space. This allows the computer to completely power off while preserving the current state, which can be restored when the computer is powered on again.
+
+      4. **Overcommit Handling**: Linux uses swap as part of its memory management strategy to handle situations where more memory is allocated than physically available. This allows the system to allocate memory to processes even if there isn't enough physical RAM, relying on swap as a fallback.
+
+      Swap space can be configured during the Linux installation process or added later as needed. It is typically recommended to have some swap space, even on systems with ample physical RAM, as it provides a safety net for handling unexpected memory demands and helps prevent the system from crashing due to memory exhaustion. However, excessive swapping (where the system relies heavily on swap instead of physical RAM) can significantly degrade performance, so it's essential to strike the right balance between RAM and swap space based on your system's specific requirements.
 
 ---
 ---

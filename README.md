@@ -11,8 +11,8 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Agile             = 45 (10 Scrum, 10 Kanban)
       + Cloud             = 53 (22 Azure)
       + Virtualization    = 20
-      + Networking        = 30
-      + Linux             = 46
+      + Networking        = 34
+      + Linux             = 49
       + Git               = 28
       + GitHub            = 49 (23 GitHub Actions)
       + Python            = 105
@@ -23,7 +23,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + K8s               = 63
       + SRE               = 31
   ------------------------------------------------
-        Total:              621
+        Total:              628
   ```
 </details>
 
