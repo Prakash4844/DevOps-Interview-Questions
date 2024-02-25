@@ -9,7 +9,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   ```js
       + DevOps            = 43
       + Agile             = 45 (10 Scrum, 10 Kanban)
-      + Cloud             = 53 (22 Azure, 8 GCP)
+      + Cloud             = 53 (22 Azure, 22 GCP)
       + Virtualization    = 20
       + Networking        = 34
       + Linux             = 49
@@ -25,7 +25,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Cutural-Fit       = 26
       + Others(non-tech)  = 28
   ------------------------------------------------
-        Total:              682
+        Total:              696
   ```
 </details>
 
@@ -33,7 +33,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
 |-------------------------------------------------|--------------------------------------------------------------|
 | + [DevOps](./DevOps/README.MD)                  | = 43                                                         |
 | + [Agile](./Agile/README.MD)                    | = 45 (10 [Scrum](./Agile/Scrum/README.MD), 10 [kanban](./Agile/Kanban/README.MD))                                   |
-| + [Cloud](./Cloud%20Computing/README.MD)        | = 53 (22 [Azure](./Cloud%20Computing/Azure/README.MD), 8 [GCP](./Cloud%20Computing/GCP/README.MD))                                              |
+| + [Cloud](./Cloud%20Computing/README.MD)        | = 53 (22 [Azure](./Cloud%20Computing/Azure/README.MD), 22 [GCP](./Cloud%20Computing/GCP/README.MD))                                              |
 | + [Virtualization](./Virtualization/README.MD)  | = 20                                                         |
 | + [Networking](./Networking/README.MD)          | = 34                                                         |
 | + [Linux](./Linux/README.MD)                    | = 49                                                         |
@@ -49,7 +49,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
 | + [Cutural-Fit](./Cultural-Fit/README.MD)       | = 26                                                         |
 | + [Others - Non tech](./Others%20(NT)/QTA.md)   | = 28                                                         |
 |                                                 |                                                              |
-|   Total                                         | = 682                                                        |
+|   Total                                         | = 696                                                        |
 
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)
