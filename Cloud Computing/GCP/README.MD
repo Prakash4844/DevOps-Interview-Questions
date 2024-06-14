@@ -58,11 +58,11 @@ Google Cloud Platform (GCP) is organized hierarchically as follows:
 
 1. **Organizations**: At the top level, there are organizations, which are typically represented by your company or institution. An organization can have multiple projects within it.
 
-2. **Projects**: Projects are used to organize and manage resources within GCP. Each project is isolated and contains its own set of resources, billing, and permissions. Projects can represent different applications or departments within an organization.
+2. **Folders** (Optional): Some organizations may use folders to further structure their projects. Folders allow you to group projects together for easier management, especially in large organizations with many projects.
 
-3. **Resources**: Within each project, you have various resources like virtual machines (VMs), storage buckets, databases, and more. These resources are where you deploy and manage your applications and services.
+3. **Projects**: Projects are used to organize and manage resources within GCP. Each project is isolated and contains its own set of resources, billing, and permissions. Projects can represent different applications or departments within an organization.
 
-4. **Folders** (Optional): Some organizations may use folders to further structure their projects. Folders allow you to group projects together for easier management, especially in large organizations with many projects.
+4. **Resources**: Within each project, you have various resources like virtual machines (VMs), storage buckets, databases, and more. These resources are where you deploy and manage your applications and services.
 
 5. **Billing**: Billing is associated with each project. It allows you to track and manage the costs incurred by the resources used within that project.
 
