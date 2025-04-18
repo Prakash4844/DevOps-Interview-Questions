@@ -24,8 +24,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + SRE               = 31
       + Cutural-Fit       = 26
       + Others(non-tech)  = 28
+      + Full Interview    = 50
   ------------------------------------------------
-        Total:              696
+        Total:              746
   ```
 </details>
 
@@ -48,8 +49,9 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
 | + [SRE](./SRE/README.MD)                        | = 31                                                         |
 | + [Cutural-Fit](./Cultural-Fit/README.MD)       | = 26                                                         |
 | + [Others - Non tech](./Others%20(NT)/QTA.md)   | = 28                                                         |
+| + [Full Interview](./Full%20Interview/README.MD) | = 50                                                         |
 |                                                 |                                                              |
-|   Total                                         | = 696                                                        |
+|   Total                                         | = 746                                                        |
 
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)
