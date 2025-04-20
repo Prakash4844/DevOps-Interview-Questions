@@ -8,7 +8,7 @@
 6. [Mindmajix - K8s Interview Questions](https://mindmajix.com/kubernetes-interview-questions)
 7. [Guru99 - Top 55 K8s Interview Questions and Answers](https://www.guru99.com/kubernetes-interview-questions-answers.html)
 8. [Turing - Top 100 K8s Interview Question and Answers](https://www.turing.com/interview-questions/kubernetes)
-9. [Toptal - 12 Essential K8s Interview Questions](hhttps://www.toptal.com/K8s/interview-questions)
+9. [Toptal - 12 Essential K8s Interview Questions](https://www.toptal.com/K8s/interview-questions)
 10. [Upgrad - K8s Interview Questions and Answers](https://www.knowledgehut.com/interview-questions/kubernetes)
 11. [Fullstack.cafe - Top K8s Interview Questions and Answers](https://www.fullstack.cafe/blog/kubernetes-interview-questions)
 12. [K21Academy - K8s Interview Questions](https://k21academy.com/docker-kubernetes/most-asked-docker-kubernetes-interview-questions-and-answers/)
