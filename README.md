@@ -19,7 +19,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Docker            = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
       + API               = 11
       + CICD              = 25
-      + IaC               = 20
+      + IaC               = 21
       + K8s               = 63
       + SRE               = 31
       + Cutural-Fit       = 26
@@ -44,14 +44,14 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
 | + [Docker](./Docker/README.MD)                  | = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) |
 | + [API](./API/README.MD)                        | = 11                                                         |
 | + [CICD](./CICD/README.MD)                      | = 25                                                         |
-| + [IaC](./IaC/README.MD)                        | = 20                                                         |
+| + [IaC](./IaC/README.MD)                        | = 21                                                         |
 | + [K8s](./K8s/README.MD)                        | = 63                                                         |
 | + [SRE](./SRE/README.MD)                        | = 31                                                         |
 | + [Cutural-Fit](./Cultural-Fit/README.MD)       | = 26                                                         |
 | + [Others - Non tech](./Others%20(NT)/QTA.md)   | = 28                                                         |
 | + [Full Interview](./Full%20Interview/README.MD) | = 50                                                         |
 |                                                 |                                                              |
-|   Total                                         | = 746                                                        |
+|   Total                                         | = 747                                                        |
 
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)
