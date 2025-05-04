@@ -7,7 +7,7 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   <summary>Click Me!</summary>
 
   ```js
-      + DevOps            = 41 (34 questions + 7 scenarios)
+      + DevOps            = 41 (34 questions + 7 scenarios) (Deduplicated)
       + Agile             = 29 (25 questions + 4 scenarios)
       + Agile/Scrum       = 10 (9 questions + 1 scenario)
       + Agile/Kanban      = 10 (9 questions + 1 scenario)
@@ -20,23 +20,23 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
       + Git               = 28 (20 questions + 8 scenarios)
       + GitHub            = 49 (23 GitHub Actions)
       + Python            = 105
-      + Docker            = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
+      + Docker            = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) (Cross-referenced)
       + API               = 11
       + CICD              = 25
       + IaC               = 21 (20 questions + 1 scenario)
-      + K8s               = 63 (53 questions + 10 scenarios)
+      + K8s               = 62 (52 questions + 10 scenarios) (Deduplicated)
       + SRE               = 31
       + Cultural-Fit      = 26
       + Others(non-tech)  = 28
       + Full Interview    = 50
   ------------------------------------------------
-        Total:              732
+        Total:              731
   ```
 </details>
 
 | TOPICS                                          | Question Count                                               |
 |-------------------------------------------------|--------------------------------------------------------------|
-| + [DevOps](./DevOps/README.MD)                  | = 41 (34 questions + 7 scenarios)                            |
+| + [DevOps](./DevOps/README.MD)                  | = 41 (34 questions + 7 scenarios) (Deduplicated)            |
 | + [Agile](./Agile/README.MD)                    | = 29 (25 questions + 4 scenarios)                            |
 | + [Agile/Scrum](./Agile/Scrum/README.MD)        | = 10 (9 questions + 1 scenario)                              |
 | + [Agile/Kanban](./Agile/Kanban/README.MD)      | = 10 (9 questions + 1 scenario)                              |
@@ -49,17 +49,17 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
 | + [Git](./Git/README.MD)                        | = 28 (20 questions + 8 scenarios)                            |
 | + [GitHub](./GitHub/README.MD)                  | = 49 (23 [GitHub Actions](./GitHub/GitHub%20Actions/README.MD)) |
 | + [Python](./Python/README.MD)                  | = 105                                                        |
-| + [Docker](./Docker/README.MD)                  | = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) |
+| + [Docker](./Docker/README.MD)                  | = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) (Cross-referenced) |
 | + [API](./API/README.MD)                        | = 11                                                         |
 | + [CICD](./CICD/README.MD)                      | = 25                                                         |
 | + [IaC](./IaC/README.MD)                        | = 21 (20 questions + 1 scenario)                             |
-| + [K8s](./K8s/README.MD)                        | = 63 (53 questions + 10 scenarios)                           |
+| + [K8s](./K8s/README.MD)                        | = 62 (52 questions + 10 scenarios) (Deduplicated)           |
 | + [SRE](./SRE/README.MD)                        | = 31                                                         |
 | + [Cultural-Fit](./Cultural-Fit/README.MD)      | = 26                                                         |
 | + [Others - Non tech](./Others%20(NT)/QTA.md)   | = 28                                                         |
 | + [Full Interview](./Full%20Interview/README.MD) | = 50                                                        |
 |                                                 |                                                              |
-|   Total                                         | = 732                                                        |
+|   Total                                         | = 731                                                        |
 
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)
