@@ -1,4 +1,6 @@
-#### Here are Some Resources: 
+# DevOps Interview Questions
+
+## Resources
 
 1. [Simplilearn - TOP 110+ DevOps Interview Questions and Answers for 2023](https://www.simplilearn.com/tutorials/devops-tutorial/devops-interview-questions)
 2. [InterviewBit - DevOps Interview Questions](https://www.interviewbit.com/devops-interview-questions/)
@@ -10,16 +12,14 @@
 8. [Shiksha - Top 70+ DevOps Interview Questions and Answers for 2023](https://www.shiksha.com/online-courses/articles/devops-interview-questions-answers/)
 9. [Katalon - Top 30+ DevOps interview questions](https://katalon.com/resources-center/blog/devops-interview-questions)
 
-**NOTE** - Above resources are not mine and belong to their owners, questions may overlap.
+**NOTE**: Above resources are not mine and belong to their owners, questions may overlap.
 
 ## Table of Contents
 
-1. [General Questions](#questions)
-2. [Scenario-based Questions](#some-scenario-based-devops-question)
+1. [Essential DevOps Concepts](#essential-devops-concepts)
+2. [Scenario-based DevOps Questions](#scenario-based-devops-questions)
 
-# Questions
-
-## Essentials
+## Essential DevOps Concepts
 
 **0. What is DevOps Engineer?**
 
@@ -232,10 +232,8 @@ Continuous Delivery (CD) and Continuous Deployment (CD) are both practices in th
 In summary, Continuous Delivery ensures that code changes are always in a deployable state but requires manual approval for deployment to production, while Continuous Deployment takes the automation a step further by automatically deploying code changes to production as soon as they pass automated tests and checks. The choice between the two approaches depends on the organization's risk tolerance, release frequency goals, and the level of automation and testing maturity in place.
 
 ---
----
 
-
-## Some scenario-based DevOps question.
+## Scenario-based DevOps Questions
 
 **1. Scenario: You are part of a DevOps team responsible for deploying a critical application to production. During a deployment, a critical issue arises that impacts the application's functionality. How would you handle this situation?**
 

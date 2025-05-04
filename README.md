@@ -7,51 +7,59 @@ Welcome to the DevOps Interview Questions Repository! Whether you're preparing f
   <summary>Click Me!</summary>
 
   ```js
-      + DevOps            = 43
-      + Agile             = 45 (10 Scrum, 10 Kanban)
-      + Cloud             = 53 (22 Azure, 22 GCP)
+      + DevOps            = 41 (34 questions + 7 scenarios)
+      + Agile             = 29 (25 questions + 4 scenarios)
+      + Agile/Scrum       = 10 (9 questions + 1 scenario)
+      + Agile/Kanban      = 10 (9 questions + 1 scenario)
+      + Cloud             = 31
+      + Cloud/Azure       = 22
+      + Cloud/GCP         = 22
       + Virtualization    = 20
       + Networking        = 34
-      + Linux             = 49
-      + Git               = 28
+      + Linux             = 48 (33 questions + 15 scenarios)
+      + Git               = 28 (20 questions + 8 scenarios)
       + GitHub            = 49 (23 GitHub Actions)
       + Python            = 105
       + Docker            = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network)
       + API               = 11
       + CICD              = 25
-      + IaC               = 21
-      + K8s               = 63
+      + IaC               = 21 (20 questions + 1 scenario)
+      + K8s               = 63 (53 questions + 10 scenarios)
       + SRE               = 31
-      + Cutural-Fit       = 26
+      + Cultural-Fit      = 26
       + Others(non-tech)  = 28
       + Full Interview    = 50
   ------------------------------------------------
-        Total:              746
+        Total:              732
   ```
 </details>
 
 | TOPICS                                          | Question Count                                               |
 |-------------------------------------------------|--------------------------------------------------------------|
-| + [DevOps](./DevOps/README.MD)                  | = 43                                                         |
-| + [Agile](./Agile/README.MD)                    | = 45 (10 [Scrum](./Agile/Scrum/README.MD), 10 [kanban](./Agile/Kanban/README.MD))                                   |
-| + [Cloud](./Cloud%20Computing/README.MD)        | = 53 (22 [Azure](./Cloud%20Computing/Azure/README.MD), 22 [GCP](./Cloud%20Computing/GCP/README.MD))                                              |
+| + [DevOps](./DevOps/README.MD)                  | = 41 (34 questions + 7 scenarios)                            |
+| + [Agile](./Agile/README.MD)                    | = 29 (25 questions + 4 scenarios)                            |
+| + [Agile/Scrum](./Agile/Scrum/README.MD)        | = 10 (9 questions + 1 scenario)                              |
+| + [Agile/Kanban](./Agile/Kanban/README.MD)      | = 10 (9 questions + 1 scenario)                              |
+| + [Cloud](./Cloud%20Computing/README.MD)        | = 31                                                         |
+| + [Cloud/Azure](./Cloud%20Computing/Azure/README.MD) | = 22                                                     |
+| + [Cloud/GCP](./Cloud%20Computing/GCP/README.MD) | = 22                                                        |
 | + [Virtualization](./Virtualization/README.MD)  | = 20                                                         |
 | + [Networking](./Networking/README.MD)          | = 34                                                         |
-| + [Linux](./Linux/README.MD)                    | = 49                                                         |
-| + [Git](./Git/README.MD)                        | = 28                                                         |
-| + [GitHub](./GitHub/README.MD)                  | = 49 (23 [GitHub Actions](./GitHub/GitHub%20Actions/README.MD))                                     |
+| + [Linux](./Linux/README.MD)                    | = 48 (33 questions + 15 scenarios)                           |
+| + [Git](./Git/README.MD)                        | = 28 (20 questions + 8 scenarios)                            |
+| + [GitHub](./GitHub/README.MD)                  | = 49 (23 [GitHub Actions](./GitHub/GitHub%20Actions/README.MD)) |
 | + [Python](./Python/README.MD)                  | = 105                                                        |
 | + [Docker](./Docker/README.MD)                  | = 52 (2 Podman, 2 Sample, 8 Docker Volume, 8 Docker Network) |
 | + [API](./API/README.MD)                        | = 11                                                         |
 | + [CICD](./CICD/README.MD)                      | = 25                                                         |
-| + [IaC](./IaC/README.MD)                        | = 21                                                         |
-| + [K8s](./K8s/README.MD)                        | = 63                                                         |
+| + [IaC](./IaC/README.MD)                        | = 21 (20 questions + 1 scenario)                             |
+| + [K8s](./K8s/README.MD)                        | = 63 (53 questions + 10 scenarios)                           |
 | + [SRE](./SRE/README.MD)                        | = 31                                                         |
-| + [Cutural-Fit](./Cultural-Fit/README.MD)       | = 26                                                         |
+| + [Cultural-Fit](./Cultural-Fit/README.MD)      | = 26                                                         |
 | + [Others - Non tech](./Others%20(NT)/QTA.md)   | = 28                                                         |
-| + [Full Interview](./Full%20Interview/README.MD) | = 50                                                         |
+| + [Full Interview](./Full%20Interview/README.MD) | = 50                                                        |
 |                                                 |                                                              |
-|   Total                                         | = 747                                                        |
+|   Total                                         | = 732                                                        |
 
 ## DevOps Roadmaps
 1. [Beginners](https://roadmap.sh/devops?r=devops-beginner)

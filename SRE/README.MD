@@ -13,8 +13,8 @@
 
 ## Table of Contents
 
-1. [General Questions](#questions)
-2. [Scenario-based Questions](#some-scenario-based-SRE-question)
+- [Questions](#questions)
+- [Some Scenario-based SRE question](#some-scenario-based-sre-question)
 
 ## Essentials
 
@@ -157,3 +157,178 @@ Ultimately, the specific interview process can vary widely depending on the comp
     6. **Post-Incident Analysis:** After an incident is resolved, SREs often conduct post-mortem or post-incident analysis to understand the root cause, document lessons learned, and implement improvements to prevent similar incidents in the future.
 
     Being on call is a critical aspect of SRE because it ensures that services remain reliable and available to users 24/7. It also aligns with the SRE principle of shared responsibility, where engineers who build and operate services share the responsibility for their reliability, including responding to incidents and addressing reliability issues promptly.
+
+
+# Some Scenario-based SRE question
+
+1. We have a web application that works in a simple client server model. There are two parts to the web app. The frontend single page application that is hosted using s3 and is distributed using a CDN. The second part is the api backend that is hosted on, lets say ec2 instances and uses a database and a cache. Can you elaborate on how the networking should be set up for the backend api server? Note: The backend api server needs to interact with external third party vendors.
+
+In this application, let's say that there is a high throughput requirement, let's say registrations which are write heavy activity, what changes would you make to the infra so that the backend api server can handle this increased write throughput.  
+
+We are going to go over a couple of scenarios where the above web application server is not working as expected, and I will like you to troubleshoot it to find the root cause of the issue and figure out the way to get the server to resume normal operation.
+
+The server is able to handle around 10 requests per second in normal working condition.
+
+Request logs of the web application server in normal working condition:
+
+```bash
+
+[1722306573] - 200 - GET - /organization/12345/users/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.158.1.38
+[1722306573] - 204 - POST - /valid_path_1/12345/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.88
+[1722306576]  - 200 - GET - /valid_path_2/ - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36 OPR/38.0.2220.41
+[1722306586] - 200 - GET - /valid_path_4/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.88
+```
+
+Scenario 1:
+
+The application is not working as expected with users getting a loader for a short duration of time after which an error message displays with a message like: "Failed to get response from the backend. Please refresh and try again!". 
+
+```bash
+[1722306573] - 404 - GET - /index.php - NodeJS - 192.158.1.38
+
+[1722306573] - 404 - POST - /private_files - NodeJS - 192.158.1.38
+
+[1722306576] - 404 - GET - /?debug_mode=true - NodeJS - 192.158.1.38
+
+[1722306586] - 200 - GET - /valid_path_2/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.88
+
+[1722306586] - 404 - GET - /logs.txt - NodeJS - 192.158.1.38
+
+[1722306586] - 404 - GET - /?admin_mode=true - NodeJS - 192.158.1.38
+
+[1722307086] - 503 - GET - /valid_path_2/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.88
+
+[1722307106] - 503 - GET - /valid_path_3/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.80
+
+[1722307586] - 502 - GET - /valid_path_4 - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.84
+
+[1722307986] - 502 - GET - /valid_path_5/ - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0 - 192.156.1.31
+```
+
+CPU utilization of the server is close to 99%, Memory utilization is under 75%. Average Request TPS is 53 over a 5 minute period. DB cpu utilization is less than 40% and memory utilization is less than 30%.
+
+**Answer:** Let’s go through everything in detail, starting with the architecture and networking setup, then scaling strategies, and finally dive into the incident and root cause analysis.
+
+---
+
+### ✅ Backend API Server Networking Setup
+
+#### **Basic Requirements**
+Your backend API server (hosted on EC2) needs to:
+- Serve requests from the frontend (S3 + CDN)
+- Communicate with a database and cache (likely within the same VPC)
+- Access external third-party APIs (like payment gateways, SMS/email vendors)
+- Be secure from unauthorized access
+
+#### **Ideal Networking Design**
+
+1. **VPC Setup**
+   - **VPC**: Define a Virtual Private Cloud to isolate resources.
+   - **Subnets**:
+     - **Private subnets**: Place EC2 instances, DB, and cache here. Not directly internet-accessible.
+     - **Public subnet**: For NAT Gateway and Bastion host (if needed).
+
+2. **Security Groups**
+   - EC2 SG:
+     - Allow HTTP(S) from the CDN IP range or ALB.
+     - Allow outbound to the internet (for external APIs).
+   - DB SG:
+     - Only allow traffic from EC2 SG.
+   - Cache SG:
+     - Allow only EC2 SG access.
+
+3. **Internet Access**
+   - **NAT Gateway** in a public subnet allows EC2 in private subnets to access the internet (for third-party API calls).
+   - **No public IPs** on EC2s.
+
+4. **Load Balancer (ALB/NLB)**
+   - Expose the API via an Application Load Balancer.
+   - Terminate HTTPS at the ALB.
+   - Route requests to EC2 instances.
+
+5. **DNS**
+   - Use Route 53 or other DNS services to route `api.example.com` to the ALB.
+
+---
+
+### 📈 High Throughput: Write-Heavy Scaling Strategy
+
+#### Key Concerns
+- Increased concurrent POST/PUT requests (e.g., registrations).
+- Write spikes to database and cache.
+
+#### Scaling Approaches
+
+1. **Auto Scaling**
+   - Use CPU/memory/TPS as scaling metrics.
+   - Add more EC2s in the group behind the ALB.
+
+2. **Horizontal DB Write Scaling**
+   - **Primary-replica DB setup** for read/write split.
+   - Use **write buffering**, **queueing**, or **batching** if consistent latency is tolerable.
+   - **Write sharding** (if you expect huge scale).
+
+3. **Asynchronous Processing**
+   - Push registration writes to a queue (e.g., SQS/Kafka).
+   - Worker processes consume and write to DB.
+
+4. **Caching**
+   - Cache duplicate registration checks, metadata, etc., using Redis/Memcached.
+
+5. **Connection Pooling**
+   - Ensure API servers use DB connection pools to avoid exhaustion.
+
+6. **Use Faster Storage**
+   - Use GP3 or provisioned IOPS volumes for DB if write latency is an issue.
+
+7. **Rate Limiting / Throttling**
+   - Prevent abuse or DDoS under high write load.
+
+---
+
+### 🚨 Troubleshooting Scenario 1: Backend Unavailable
+
+#### Observations
+
+- Increase in **404**, **502**, **503** errors.
+- Some paths are valid and return 200, while others fail.
+- CPU utilization at **99%**, memory is OK.
+- TPS has increased significantly (from 10 → 53).
+- DB is not a bottleneck.
+
+#### Log Insights
+
+- Requests like `/index.php`, `/?admin_mode=true`, and `/logs.txt` are **not valid paths**. Suggests bot or scanner traffic.
+- Spikes in 502/503: Application is **overwhelmed** or **crashing**.
+- Some 404s with strange user agents (`NodeJS`) → possibly automated/bot traffic.
+
+---
+
+#### Likely Root Cause
+
+**Application overload due to bot traffic / path scanning attacks**  
+This bot traffic is sending invalid requests, possibly triggering expensive error handling logic, leading to CPU saturation.
+
+---
+
+#### Resolution Plan
+
+1. **Immediate**
+   - Block suspicious IPs or User Agents using WAF (AWS WAF, Cloud Armor, etc.).
+   - Serve 403 immediately for known bad patterns (e.g., `.php`, `debug_mode`, `admin_mode`).
+   - Add rate-limiting or CAPTCHA at frontend for sensitive actions.
+
+2. **Mid-Term Fix**
+   - Add caching for static/dynamic content wherever possible.
+   - Use AWS Shield or Cloudflare for DDoS protection.
+   - Optimize API code to fail fast on invalid routes.
+   - Use a reverse proxy (e.g., NGINX) to filter invalid paths.
+
+3. **Monitoring**
+   - Set up alerts for CPU > 80%, sudden surge in 4xx or 5xx.
+   - Log and aggregate User Agents/IPs to detect bots early.
+
+4. **Infra Scaling**
+   - Enable auto-scaling based on CPU load.
+   - Use a queue-based architecture to decouple expensive operations.
+  

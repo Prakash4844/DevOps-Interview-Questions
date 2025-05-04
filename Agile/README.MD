@@ -1,4 +1,6 @@
-#### Here are Some Resources: 
+# Agile Interview Questions
+
+## Resources
 
 1. [Simplilearn - TOP 60+ Agile Interview Questions and Answers for 2023](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/agile-interview-questions)
 2. [InterviewBit - Agile Interview Questions](https://www.interviewbit.com/agile-interview-questions/)
@@ -11,16 +13,14 @@
 9. [Whizlabs - Top 40+ Agile Scrum Interview Questions](https://www.whizlabs.com/blog/agile-scrum-interview-questions/)
 10. [Indeed - 37 Common Agile Interview Questions With Example Answers for 2023](https://in.indeed.com/career-advice/finding-a-job/agile-interview-questions)
 
-**NOTE** - Above resources are not mine and belong to their owners, questions may overlap.
+**NOTE**: Above resources are not mine and belong to their owners, questions may overlap.
 
 ## Table of Contents
 
-1. [General Questions](#questions)
-2. [Scenario-based Questions](#some-scenario-based-devops-question)
+1. [Essential Agile Questions](#essential-agile-questions)
+2. [Scenario-based Agile Questions](#scenario-based-agile-questions)
 
-# Questions
-
-## Essentials
+## Essential Agile Questions
 
 
 1. **What is Agile development, and why is it important in software development?**
@@ -130,9 +130,8 @@
 
 
 ---
----
 
-## Some scenario-based DevOps question.
+## Scenario-based Agile Questions
 
 1. **Can you provide examples of Agile tools and software you have experience with, such as JIRA, Trello, or others?**
 

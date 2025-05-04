@@ -1,4 +1,6 @@
-#### Here are Some Resources: 
+# Kubernetes (K8s) Interview Questions
+
+## Resources
 
 1. [Simplilearn - Top 40 K8s Interview Questions and Answers](https://www.simplilearn.com/tutorials/kubernetes-tutorial/kubernetes-interview-questions)
 2. [InterviewBit - K8s Interview Questions](https://www.interviewbit.com/kubernetes-interview-questions/)
@@ -13,16 +15,14 @@
 11. [Fullstack.cafe - Top K8s Interview Questions and Answers](https://www.fullstack.cafe/blog/kubernetes-interview-questions)
 12. [K21Academy - K8s Interview Questions](https://k21academy.com/docker-kubernetes/most-asked-docker-kubernetes-interview-questions-and-answers/)
 
-**NOTE** - Above resources are not mine and belong to their owners, questions may overlap.
+**NOTE**: Above resources are not mine and belong to their owners, questions may overlap.
 
 ## Table of Contents
 
-1. [General Questions](#questions)
-2. [Scenario-based Questions](#some-scenario-based-devops-question)
+1. [Essential Kubernetes Concepts](#essential-kubernetes-concepts)
+2. [Scenario-based Kubernetes Questions](#scenario-based-kubernetes-questions)
 
-# Questions
-
-## Essentials
+## Essential Kubernetes Concepts
 
 **1. What is Kubernetes, and why is it important in container orchestration?**
 
@@ -373,10 +373,8 @@
 
 
 ---
----
 
-
-## Some scenario-based DevOps question.
+## Scenario-based Kubernetes Questions
 
 
 **1. Scenario:** You have a stateful application running on Kubernetes using a StatefulSet. During a routine maintenance operation, one of the nodes hosting a stateful pod goes offline. How can you ensure that the StatefulSet reschedules the pod on another node and maintains its state?
